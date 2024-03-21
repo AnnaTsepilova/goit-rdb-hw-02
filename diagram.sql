@@ -50,7 +50,7 @@ ENGINE = InnoDB;
 CREATE TABLE IF NOT EXISTS `mydb`.`order_item` (
   `order_id` INT NOT NULL,
   `product_id` INT NOT NULL,
-  `quantity` INT NOT NULL,
+  `quantity` DECIMAL(100) NULL,
   PRIMARY KEY (`order_id`),
   UNIQUE INDEX `PK_order_id_UNIQUE` (`order_id` ASC) VISIBLE,
   UNIQUE INDEX `product_id_UNIQUE` (`product_id` ASC) VISIBLE,
